@@ -1,0 +1,4 @@
+2013-05-31 15:27:55,419 [qtp6783657-21] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/blog] in DispatcherServlet with name 'appServlet'
+2013-05-31 15:27:55,554 [qtp6783657-24] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'appServlet'
+2013-05-31 15:27:55,557 [qtp6783657-22] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'appServlet'
+2013-05-31 15:27:55,560 [qtp6783657-23] WARN  [org.springframework.web.servlet.PageNotFound] - No mapping found for HTTP request with URI [/favicon.ico] in DispatcherServlet with name 'appServlet'
