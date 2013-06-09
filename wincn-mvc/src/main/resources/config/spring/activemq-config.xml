@@ -14,7 +14,7 @@
 		<property name="password" value="${activemq.password}" /><!--密码 -->
 	</bean>
 
-	<bean id="messageObj" class="com.wincn.thirdparty.activemq.bean.MessageObj" />
+	<bean id="messageObj" class="net.wincn.thirdparty.activemq.bean.MessageObj" />
 
 	<bean id="queueDestination" class="org.apache.activemq.command.ActiveMQQueue">
 		<!-- 设置消息队列的名字 -->
@@ -33,17 +33,17 @@
 	</bean>
 
 	<bean id="messageSender"
-		class="com.wincn.thirdparty.activemq.server.service.MessageSender">
+		class="net.wincn.thirdparty.activemq.server.service.MessageSender">
 		<property name="jmsTemplate" ref="jmsTemplate"></property>
 	</bean>
 
 	<bean id="messageReceiver"
-		class="com.wincn.thirdparty.activemq.client.service.MessageReceiver">
+		class="net.wincn.thirdparty.activemq.client.service.MessageReceiver">
 		<property name="jmsTemplate" ref="jmsTemplate"></property>
 	</bean>
 
 	<bean id="messageListener"
-		class="com.wincn.thirdparty.activemq.client.listener.MyMessageListener">
+		class="net.wincn.thirdparty.activemq.client.listener.MyMessageListener">
 	</bean>
 	<!-- 消息监听 -->
 	<!-- <bean id="listenerContainer"

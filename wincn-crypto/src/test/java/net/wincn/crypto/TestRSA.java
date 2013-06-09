@@ -18,9 +18,9 @@ public class TestRSA {
 	@Test
 	public void initKey() {
 		try {
-			byte[] b1 = RSAUtils.encryptByPrivateKey("123456789".getBytes());;
+			byte[] b1 = RSAUtils.encryptByPublicKey("123456789".getBytes());;
 			
-			System.out.println(new String(RSAUtils.decryptByPublicKey(b1)));
+			System.out.println(new String(Base64.encode(b1)));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

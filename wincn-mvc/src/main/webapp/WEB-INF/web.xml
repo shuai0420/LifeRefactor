@@ -85,7 +85,7 @@
 
 	<filter>
 		<filter-name>baseFilter</filter-name>
-		<filter-class>com.wincn.base.filter.BaseFilter</filter-class>
+		<filter-class>net.wincn.base.filter.BaseFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>baseFilter</filter-name>

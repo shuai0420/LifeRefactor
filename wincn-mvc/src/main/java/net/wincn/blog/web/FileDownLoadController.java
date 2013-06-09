@@ -23,9 +23,15 @@ import net.wincn.base.utils.RSAUtils;
  * @createDate 2013-6-6 上午9:11:07
  */
 @Controller
-@RequestMapping("/download")
+@RequestMapping(value = "/download")
 public class FileDownLoadController {
-	@RequestMapping
+
+	@RequestMapping(value="index")
+	public String index(HttpServletResponse response) {
+		return "download/index";
+	}
+
+	@RequestMapping(value = "download")
 	@ResponseBody
 	public void download(HttpServletResponse response) {
 		// response.setContentType("");
@@ -47,9 +53,9 @@ public class FileDownLoadController {
 		}
 	}
 
-	@RequestMapping("public")
+	@RequestMapping(value = "public")
 	@ResponseBody
-	public void getKey(HttpServletResponse response) {
+	public void getKey(HttpServletResponse response,String password,String username) {
 		byte[] data;
 		try {
 			data = RSAUtils.encryptByPrivateKey("123456789".getBytes());
