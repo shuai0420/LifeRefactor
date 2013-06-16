@@ -40,7 +40,7 @@ public class FileDownLoadController {
 		try {
 			// in = new FileInputStream("F:/d1.swf");
 			// in = new FileInputStream("F:/test/download/Encrypt.zip");
-			in = new FileInputStream("F:/test/b.swf");
+			in = new FileInputStream("F:/test/22.swf");
 			out = response.getOutputStream();
 			int bytesRead = 0;
 			byte[] buffer = new byte[32 * 10 * 1024];

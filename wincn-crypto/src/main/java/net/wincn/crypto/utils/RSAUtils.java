@@ -24,7 +24,7 @@ public class RSAUtils {
 	//非对称加密算法
 	public static final String KEY_ALGORITEM = "RSA";
 	//RSA秘钥长度，默认1024
-	public static final Integer KEY_SIZE= 1024;
+	public static final Integer KEY_SIZE= 512;
 	//公钥
 	public static final String PUBLICKEY = "publickey";
 	//私钥
@@ -34,7 +34,7 @@ public class RSAUtils {
 	// 默认的私钥，经过base64加密
 	private static String privateKeyStr = "MIICdgIBADANBgkqhkiG9w0BAQEFAASCAmAwggJcAgEAAoGBAJqDW8+F5pYJ/OVHdgwSOWgvBg+Utmu5GdSNN++7zbHbns85BrG5xvqxOSKCVTFmQHbS/d8D95SsVz9vF7/RMP8Bf8iQm5lkmyB5iCrggTTeGID5frG1ow0d5kDQhxMnXyaPZEgAMAEFXqkrCnbkGsEtiZMpfFv4dyKh8irLgMrHAgMBAAECgYEAgmzPWuUUNyJHLuKbaqUXgDHxU8WcFmIww5JQ3TQR9UgFTbY9SFgg9gwSxmZtsz00vRhs44tduUmgfBMyYOAcElUs8p2eQnm/aJjyF+BcyOWALAmu/+wUMM4V//M4kvyNgJiYNzyjPISmQcoPGV/Oa2D8ahX2fcHLIwkE30M63QECQQDNHoT2+BX7YaAkaue3L6Dr/6eJB5K8TY/tukZfAgJGuvpg6gZBNajq6gX7ran9ZhpK8g8GQ/jOz8maqyydiQvRAkEAwNdAOCiQ9e6+v4mCAvr64/M6nFuuV4iEsWFonLiIiuYCUdQueP8wRPFeSZszrS0Q/W7aWTG01GPpBVDNWTLLFwJAKifUkeFIu0JEJFfoSWi7fOUs7GenC5YxN11qKwqBp0G0RYizQmGh1q3EDwaRAigizTZUSihcETz5JRV69OF+kQI/ZzLKK0OKUBJ0AgyUhwPJQDPqKcLmifGFEWgPk88tQyfUFfZ26EmoizygOMPV49c6QGYSc6kmHINbMH0NZ67HAkEAjb5zTPyJzOrBHfppwXq8mOgEzj65UM7AvBoKMHsdFBxHb4zBpnZtDUPjQPuQ7PL2iPCkPWpGDmqpBOKaE1GOIw==";
 	// 加密长度
-	public static final int dataLength = 117;
+	public static final int dataLength = 10;
 	
 	/**
 	 * 私钥解密
@@ -197,6 +197,7 @@ public class RSAUtils {
 		//公钥
 		RSAPublicKey publicKey = (RSAPublicKey)keyPair.getPublic();
 		//私钥
+	
 		RSAPrivateKey privateKey = (RSAPrivateKey)keyPair.getPrivate();
 		//封装秘钥
 		Map<String,Object> keyMap = new HashMap<String, Object>(2);

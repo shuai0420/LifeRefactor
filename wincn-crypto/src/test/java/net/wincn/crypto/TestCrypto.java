@@ -2,11 +2,14 @@ package net.wincn.crypto;
 
 import java.io.File;
 
+import net.wincn.crypto.core.Crypto;
 import net.wincn.crypto.decrypt.Decrypt;
 import net.wincn.crypto.encrypt.Encrypt;
 import net.wincn.crypto.utils.FileUtils;
 
 import org.junit.Test;
+
+import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 
 /**
  * 测试单元，使用方法
@@ -40,5 +43,8 @@ public class TestCrypto {
 		byte[] c1 = FileUtils.readFileByte(tag);
 		byte[] c2 = Decrypt.decrypt(key, c1);
 		FileUtils.writeByteFile(c2, tag2);
+	}
+	public static void main(String[] args) {
+		System.out.println(Base64.encode(Encrypt.encrypt("hlsq123456", "123456789".getBytes())));
 	}
 }
