@@ -2,7 +2,6 @@ package net.wincn.crypto;
 
 import java.io.File;
 
-import net.wincn.crypto.core.Crypto;
 import net.wincn.crypto.decrypt.Decrypt;
 import net.wincn.crypto.encrypt.Encrypt;
 import net.wincn.crypto.utils.FileUtils;

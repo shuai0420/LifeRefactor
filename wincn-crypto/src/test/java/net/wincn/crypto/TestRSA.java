@@ -1,14 +1,11 @@
 package net.wincn.crypto;
 
 import java.math.BigInteger;
-import java.security.interfaces.RSAPrivateKey;
-import java.security.spec.RSAPrivateKeySpec;
 
 import net.wincn.crypto.utils.RSAUtils;
 
 import org.junit.Test;
 
-import sun.security.util.BigInt;
 
 import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
 

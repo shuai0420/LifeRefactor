@@ -14,7 +14,6 @@ import net.wincn.user.constant.FilePathEnum;
 @Controller
 @RequestMapping(value = "/blog")
 public class BlogController {
-	private String message = "";
 
 	@RequestMapping(value = "{username}")
 	public String index(@PathVariable String username) {
