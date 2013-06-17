@@ -3,13 +3,14 @@ package net.wincn.crypto.decrypt;
 import net.wincn.crypto.core.Crypto;
 
 /**
- * 解密操作
+ * 解密操作(被CryptoUtils代替)
  * 
  * @project crypto
  * @author 方帅
  * @email gefangshuai@163.com
  * @createDate 2013-6-8 下午3:38:28
  */
+@Deprecated
 public class Decrypt {
 	private static Crypto crypto = Crypto.getInstance();
 
