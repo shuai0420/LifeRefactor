@@ -2,8 +2,6 @@ package net.wincn.crypto;
 
 import java.io.File;
 
-import net.wincn.crypto.decrypt.Decrypt;
-import net.wincn.crypto.encrypt.Encrypt;
 
 import net.wincn.crypto.utils.CryptoUtils;
 import net.wincn.crypto.utils.FileUtils;
@@ -11,13 +9,11 @@ import net.wincn.crypto.utils.FileUtils;
 import org.apache.commons.codec.binary.Hex;
 import org.junit.Test;
 
-import com.sun.org.apache.xerces.internal.impl.dv.util.Base64;
-
 /**
  * 测试单元，使用方法
  * 
  * @project crypto
- * @author 方帅
+ * @author gefangshuai
  * @email gefangshuai@163.com
  * @createDate 2013-6-8 下午3:16:39
  */

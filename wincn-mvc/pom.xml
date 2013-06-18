@@ -14,7 +14,7 @@
 	<packaging>war</packaging>
 	<name>wincn-mvc Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	<dependencies>
+	<dependencies> 
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
