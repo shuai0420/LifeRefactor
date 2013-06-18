@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.io.FileUtils;
@@ -26,9 +27,14 @@ import net.wincn.base.utils.RSAUtils;
 @RequestMapping(value = "/download")
 public class FileDownLoadController {
 
-	@RequestMapping(value="index")
+	@RequestMapping(value = "index")
 	public String index(HttpServletResponse response) {
 		return "download/index";
+	}
+
+	@RequestMapping(value = "online")
+	public String onlineView(HttpServletRequest request) {
+		return "download/onlineView";
 	}
 
 	@RequestMapping(value = "download")
@@ -55,7 +61,7 @@ public class FileDownLoadController {
 
 	@RequestMapping(value = "public")
 	@ResponseBody
-	public void getKey(HttpServletResponse response,String password,String username) {
+	public void getKey(HttpServletResponse response, String password, String username) {
 		byte[] data;
 		try {
 			data = RSAUtils.encryptByPrivateKey("123456789".getBytes());
