@@ -266,6 +266,14 @@
 			<artifactId>quartz-all</artifactId>
 		</dependency>
 		<!-- THE THIRD SUPPORT end -->
+
+		<!-- owner -->
+		<dependency>
+			<groupId>net.wincn</groupId>
+			<artifactId>wincn-report</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
