@@ -14,7 +14,7 @@
 	<packaging>war</packaging>
 	<name>wincn-mvc Maven Webapp</name>
 	<url>http://maven.apache.org</url>
-	<dependencies> 
+	<dependencies>
 		<!-- Spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -261,7 +261,19 @@
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-all</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>opensymphony</groupId>
+			<artifactId>quartz-all</artifactId>
+		</dependency>
 		<!-- THE THIRD SUPPORT end -->
+
+		<!-- owner -->
+		<dependency>
+			<groupId>net.wincn</groupId>
+			<artifactId>wincn-report</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
