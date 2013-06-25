@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.wincn</groupId>
 	<artifactId>lifeRefactor</artifactId>
@@ -7,7 +8,9 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>wincn-crypto</module>
-    	<module>wincn-mvc</module>
+		<module>wincn-mvc</module>
+		<module>wincn-report</module>
+		<module>wincn-utils</module>
 	</modules>
 
 	<properties>
@@ -27,6 +30,8 @@
 		<shiro.version>1.2.0</shiro.version>
 		<cxf.version>2.2.3</cxf.version>
 		<activemq.version>5.8.0</activemq.version>
+		<quartz.version>1.6.3</quartz.version>
+		<jxl.version>2.6.12</jxl.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jdk.version>1.6</jdk.version>
 	</properties>
@@ -323,6 +328,18 @@
 				<groupId>org.apache.activemq</groupId>
 				<artifactId>activemq-all</artifactId>
 				<version>${activemq.version}</version>
+			</dependency>
+			<!-- quartz-all -->
+			<dependency>
+				<groupId>opensymphony</groupId>
+				<artifactId>quartz-all</artifactId>
+				<version>${quartz.version}</version>
+			</dependency>
+			<!-- jxl -->
+			<dependency>
+				<groupId>net.sourceforge.jexcelapi</groupId>
+				<artifactId>jxl</artifactId>
+				<version>${jxl.version}</version>
 			</dependency>
 			<!-- THE THIRD SUPPORT end -->
 			<!-- Test -->
