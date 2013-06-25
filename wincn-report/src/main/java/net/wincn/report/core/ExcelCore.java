@@ -3,7 +3,7 @@ package net.wincn.report.core;
 import java.io.File;
 import java.io.IOException;
 
-import net.wincn.report.exception.CreateExcelException;
+import net.wincn.report.exception.LifeRefactorException;
 
 import jxl.Workbook;
 import jxl.write.WritableSheet;
@@ -36,7 +36,7 @@ public class ExcelCore {
 			sheet = workbook.createSheet(sheetName, 0);
 			workbook.write();
 		} catch (IOException e) {
-			throw new CreateExcelException("目标文件无效！", e);
+			throw new LifeRefactorException("目标文件无效！", e);
 		} finally {
 			try {
 				workbook.close();
