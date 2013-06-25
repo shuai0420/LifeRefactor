@@ -8,10 +8,18 @@ import java.util.regex.Pattern;
 
 import net.wincn.utils.exception.UtilsException;
 
+/**
+ * 文件工具类
+ * 
+ * @project wincn-utils
+ * @author gefangshuai
+ * @email gefangshuai@163.com
+ * @createDate 2013-6-25 下午4:13:40
+ */
 public final class FileUtils {
 
 	/**
-	 * 根据路径规则，列出目录下的所有文件
+	 * 根据路径规则，列出目录下的所有文件，如：C盘一级目录 C:/ ；C盘根目录，带递归：C:/**
 	 * 
 	 * @param path
 	 * @return
