@@ -10,6 +10,7 @@
 		<module>wincn-crypto</module>
 		<module>wincn-mvc</module>
 		<module>wincn-report</module>
+		<module>wincn-utils</module>
 	</modules>
 
 	<properties>

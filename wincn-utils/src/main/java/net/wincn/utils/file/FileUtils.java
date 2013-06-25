@@ -1,4 +1,4 @@
-package net.wincn.report.tools;
+package net.wincn.utils.file;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
 
-import net.wincn.report.exception.LifeRefactorException;
+import net.wincn.utils.exception.UtilsException;
 
 public final class FileUtils {
 
@@ -25,7 +25,7 @@ public final class FileUtils {
 			if (strArr.length == 2) {
 				regex = joinRegex(strArr[1]);
 			} else if (strArr.length > 2) {
-				throw new LifeRefactorException("路径规则有误，请检查是否出现两组'**'！");
+				throw new UtilsException("路径规则有误，请检查是否出现两组'**'！");
 			}
 			System.out.println("regex:" + regex);
 			Pattern pattern = Pattern.compile(regex);
@@ -68,7 +68,7 @@ public final class FileUtils {
 					sb.append("^").append(r[0]).append("+").append(r[1]).append("$");
 				}
 			} else {
-				throw new LifeRefactorException("路径规则有误！");
+				throw new UtilsException("路径规则有误！");
 			}
 		}
 		return sb.toString().replace(".", "\\.");
